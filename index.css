@@ -1,0 +1,113 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+table {
+    border-collapse: collapse;
+    font-family: Futura, Arial, SansSerif;
+    margin:0px;
+}
+
+ul,li {
+    text-align: left;
+    font-size: medium;
+}
+
+th,td {
+    padding: .65em;
+    vertical-align: top;
+    text-align:center;
+}
+
+th {
+    background: #555 no-repeat scroll 0 0;
+
+    color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background: #cccccc;
+}
+
+tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+th:first-child {
+    border-radius: 9px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 9px 0 0;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 9px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 9px 0;
+}
+
+
+body{
+
+    font-family: Futura, Arial, SansSerif;
+    background-color: #EBF5FB;
+}
+
+form {
+    border-collapse: collapse;
+    border-radius: 9px;
+}
+
+input {
+    font-size:16px;
+    font-family: Futura, Arial, SansSerif;
+}

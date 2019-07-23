@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="./node_modules/socket.io-client/dist/socket.io.js" type="text/javascript" charset="utf-8"></script>
+      <script type ="text/javascript">
+
+      var socketio = io.connect();
+      socketio.on("message_to_client",function(data) {
+         //Append an HR thematic break and the escaped HTML of the new message
+         document.getElementById("chatlog").appendChild(document.createElement("hr"));
+         document.getElementById("chatlog").appendChild(document.createTextNode(data['message']));
+      });
+
+
+      </script>
+   </head>
+   <body>
+      <div id="app"></div>
+      <div id="chatlog"></div>
+
+      <script src="/dist/bundle.js"></script>
+   </body>
+</html>
